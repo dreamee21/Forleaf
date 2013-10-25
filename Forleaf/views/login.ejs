@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>Singup for Forleaf</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="loginLogo">
+				<img src="/images/loginLogo.jpg" width="150" height="61">
+			</div>
+			<div id="loginContents">
+				<form action="/login" method="POST" id="login_form">
+					<fieldset>
+						<div id="email">
+							<input type="text" placeholder="E-mail" name="email" />
+						</div>
+						<div id="password">
+							<input type="password" placeholder="Password" name="passwd" />
+						</div>
+						<div id="login">
+							<a style="cursor:pointer" onclick="$('#login_form').submit()">Login</a>
+						</div>
+					</fieldset>
+				</form>
+				<form action="/signupmove" method="POST" id="signupmove_form">
+					<fieldset>
+						<div id="signupBtn">
+							<a style="cursor:pointer" onclick="$('#signupmove_form').submit()">SignUp</a>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="/javascripts/default.js"></script>
+	</body>
+</html>
