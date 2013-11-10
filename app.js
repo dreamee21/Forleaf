@@ -23,12 +23,21 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', admin.profile);
+app.get('/', admin.new_friends);
 app.post('/login', admin.login);
 app.post('/signup', admin.signup);
 app.post('/signupmove', admin.signupmove);
 app.post('/new_friends', admin.new_friends);
+app.post('/profile', admin.profile);
 app.post('/edit_profile', admin.edit_profile);
+app.post('/messages', admin.messages);
+app.post('/message_profile', admin.message_profile);
+app.post('/letterbox', admin.letterbox);
+app.post('/more', admin.more);
+app.post('/notice', admin.notice);
+app.post('/help', admin.help);
+app.post('/version', admin.version);
+app.post('/contact', admin.contact);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

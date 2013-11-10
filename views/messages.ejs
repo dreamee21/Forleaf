@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Messages</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<p>messages</p>
+			</div>
+			<div id="tabBar">
+				<form action="/new_friends" method="POST" id="new_friends">
+					<p style="cursor:pointer" onclick="$('#new_friends').submit()">new_friends</p>
+				</form>
+				<form action="/profile" method="POST" id="profile">
+					<p style="cursor:pointer" onclick="$('#profile').submit()">profile</p>
+				</form>
+				<form action="/messages" method="POST" id="messages">
+					<p style="cursor:pointer" onclick="$('#messages').submit()">messages</p>
+				</form>				
+				<form action="/more" method="POST" id="more">
+					<p style="cursor:pointer" onclick="$('#more').submit()">more</p>
+				</form>
+			</div>				
+			<div id="friendList">
+				<form action="/message_profile" method="POST" id="message_profile">
+					<div class="friendProfile" onclick="$('#message_profile').submit()">
+						<div class="msgProfileThum">
+							<img src="../images/profileThumb1.png" />
+						</div>
+						<div class="friendName">
+							<p>Chris Kim</p>
+						</div>
+					</div>
+				</form>	
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/default.js"></script>
+	</body>
+</html>

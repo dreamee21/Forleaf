@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 		<title>Edit Profile</title>
 		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 	</head>
 	<body>
 		<div id="whole">
 			<div id="naviBar">
+				<form action="/profile" method="POST" id="back">
+					<p style="cursor:pointer" onclick="$('#back').submit()">back</p>
+				</form>
 				<p>Edit Profile</p>
+				<form action="/profile" method="POST" id="edit">
+					<p style="cursor:pointer" onclick="$('#edit').submit()">edit</p>
+				</form>
 			</div>
 			<div id="profileDetailWrapper">
 				<div class="profileTitle">
@@ -40,80 +47,93 @@
 					<p>LANGUAGE</p>
 				</div>
 				<div class="profileContent">
-					<p>Korean, English, French, Chinese</p>
+					<select>
+						<option value="korean">Korean</option>
+						<option value="english">English</option>
+						<option vlaue="french">French</option>
+						<option value="spanish">Spanish</option>
+						<option value="chinese">Chinese</option>
+					</select>
+					<select>
+						<option value="great">great</option>
+						<option value="good">good</option>
+						<option vlaue="normal">normal</option>
+						<option value="poor">poor</option>
+						<option value="none">none</option>
+					</select>
+					<div class="language">
+						<p class="languageName">Sanskrit</p>
+						<p class="languageLevel">Great</p>
+					</div>
+					<div class="language">
+						<p class="languageName">Latin</p>
+						<p class="languageLevel">Good</p>
+					</div>
+					<div class="language">
+						<p class="languageName">Korean</p>
+						<p class="languageLevel">Good</p>
+					</div>
 				</div>
 				<div class="profileTitle">
 					<p>STUDYING</p>
 				</div>
 				<div class="profileContent">
-					<p>Sanskrit, Latin</p>
+					<select>
+						<option value="korean">Korean</option>
+						<option value="english">English</option>
+						<option vlaue="french">French</option>
+						<option value="spanish">Spanish</option>
+						<option value="chinese">Chinese</option>
+					</select>
+					<select>
+						<option value="great">great</option>
+						<option value="good">good</option>
+						<option vlaue="normal">normal</option>
+						<option value="poor">poor</option>
+						<option value="none">none</option>
+					</select>
+					<div class="language">
+						<p class="languageName">Sanskrit</p>
+						<p class="languageLevel">Great</p>
+					</div>
+					<div class="language">
+						<p class="languageName">Latin</p>
+						<p class="languageLevel">Good</p>
+					</div>
+					<div class="language">
+						<p class="languageName">Korean</p>
+						<p class="languageLevel">Good</p>
+					</div>
 				</div>
 				<div class="profileTitle">
 					<p>LOCATION</p>
 				</div>
 				<div class="profileContent">
-					<p>Shinchon, Naksungdae, Kangbyun</p>
+					<button>change location</button>
 				</div>
 				<div class="profileTitle">
 					<p>SCHOOL / JOB</p>
 				</div>
 				<div class="profileContent">
+					<input type="text" placeholder="Add school / job" id="add_job" />
 					<p>University student</p>
 				</div>
 				<div class="profileTitle">
 					<p>HOBBY</p>
 				</div>
 				<div class="profileContent">
+					<input type="text" placeholder="Add hobby" id="add_hobby" />
 					<p>Singing</p>
 				</div>
 				<div class="profileTitle">
 					<p>INTRODUCTION</p>
 				</div>
 				<div class="profileContent">
-					<p>Let's be pirates</p>
-				</div>
-				<div class="profileTitle">
-					<p>CONTACT</p>
-				</div>
-				<div class="profileContent">
-					<p>itworks21@naver.com</p>
+					<textarea rows="4" cols="50">Let's be pirates
+					</textarea>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<div id="login" style="margin-top: 20px;">
-					<div class="login_row">
-							<input type="email" name="user[email]" placeholder="Email" id="signup_email" data-required="required" >
-					</div>
-					<div class="login_row">
-							<input type="password" name="user[password]" placeholder="Password" id="signup_password" data-required="required">						
-					</div>
-					<button class="btn_signup_submit" id="signup_submit" style="margin-top: 20px;">
-	               		<span class="btn_signup">Log in</span>
-	    			</button>
-				</div>
-			</div>
-
-<select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-
+		</div>	
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="/javascripts/default.js"></script>
 	</body>

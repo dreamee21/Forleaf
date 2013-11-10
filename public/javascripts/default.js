@@ -31,3 +31,19 @@ $('#toggleToRequest').click(function(e) {
 	$('.reqBtns').toggle();
 	$('.recommendAndRequest').toggle();
 });
+
+$('#title1').click(function(e) {
+	$('#statementContent').slideDown();
+	$('.viewOrClose').toggle();
+});
+
+// 작가 노트 올리기
+$('#title1Highlighted').click(function(e) {
+	$('#statementContent').slideUp();
+	$('.viewOrClose').toggle();
+});
+
+$('#title1').click(function()
+{
+	$('#content').slideToggle(null);
+});

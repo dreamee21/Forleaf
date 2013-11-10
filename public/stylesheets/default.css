@@ -44,10 +44,15 @@ a:hover {
 	color: #666666;
 }
 
+form {
+	display: inline-block;
+}
+
+
 /* common */
 #whole {
-	width: 640px;
-	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
 }
 
 /* navigator Bar */
@@ -56,11 +61,31 @@ a:hover {
 	height: 30px;
 	background-color: #B3D6A0;
 	text-align: center;
+	position: fixed;
+	top: 0;
+}
+
+#back {
+	float: left;
+}
+
+#edit {
+	float: right;
 }
 
 #naviBar p {
+	display: inline-block;
 	color: white;
-	padding-top: 7px;
+	margin: 0;
+}
+
+/* tab Bar */
+#tabBar {
+	width: 100%;
+	height: 50px;
+	background-color: #666666;
+	position: fixed;
+	top: 30px;
 }
 
 /* Login */
@@ -152,6 +177,78 @@ a:hover {
 .profileTitle {
 	color: green;
 }
+
+/******** edit profile *******/
+.language p {
+	display: inline-block;
+}
+
+.languageLevel {
+	color: orange;
+}
+
+/******** messages *******/
+.friendProfile div {
+	display: inline-block;
+}
+
+#friendProfileWrapper {
+	text-align: center;
+}
+
+.languageContainer {
+	display: inline-block;
+}
+
+#msgBtns {
+	text-align: center;
+}
+
+/******** letterbox *******/
+.friendsLetter {
+	float: left;
+	background-color: blue;
+	max-width: 350px;
+}
+
+.myLetter {
+	float: right;
+	background-color: red;
+	max-width: 350px;
+}
+
+/******** more *******/
+.moreContent {
+	background-color: #666666;
+	display: inline-block;
+	width: 200px;
+}
+
+/******** notice & help *******/
+#rows {
+	text-align: left;
+}
+
+/******** notice & help *******/
+#versionData p {
+	display: inline-block;
+}
+
+.versionTitle {
+	float: left;
+}
+
+.versionInfo {
+	float: left;
+	margin-left: 50px;
+}
+
+#downloadApp {
+	float: right;
+}
+
+
+
 
 
 

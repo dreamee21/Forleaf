@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 		<title>Find your new friends</title>
 		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 	</head>
@@ -9,6 +10,20 @@
 			<div id="naviBar">
 				<p>new friends</p>
 			</div>
+			<div id="tabBar">
+				<form action="/new_friends" method="POST" id="new_friends">
+					<p style="cursor:pointer" onclick="$('#new_friends').submit()">new_friends</p>
+				</form>
+				<form action="/profile" method="POST" id="profile">
+					<p style="cursor:pointer" onclick="$('#profile').submit()">profile</p>
+				</form>
+				<form action="/messages" method="POST" id="messages">
+					<p style="cursor:pointer" onclick="$('#messages').submit()">messages</p>
+				</form>				
+				<form action="/more" method="POST" id="more">
+					<p style="cursor:pointer" onclick="$('#more').submit()">more</p>
+				</form>
+			</div>				
 			<div class="profileList">
 				<div class="profileThumb">
 					<img src="../images/profileThumb1.png" />

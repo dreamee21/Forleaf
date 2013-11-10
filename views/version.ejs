@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Version</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/more" method="POST" id="back">
+					<p style="cursor:pointer" onclick="$('#back').submit()">back</p>
+				</form>
+				<p>version</p>
+			</div>			
+			<div id="versionData">
+				<div id="currentVersion">
+					<p class="versionTitle">Current Version</p>
+					<p class="versionInfo">0.1</p>
+				</div>
+				<div class="clearboth"></div>
+				<div id="latestVersion">
+					<p class="versionTitle">Latest Version</p>
+					<p class="versionInfo">0.2</p>
+					<a href="http://www.1artist1week.com" target="_blank" id="downloadApp">download</p>
+				</div>
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/default.js"></script>
+	</body>
+</html>

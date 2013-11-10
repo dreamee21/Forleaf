@@ -135,4 +135,42 @@ exports.edit_profile = function(req, res) {
 	res.render('edit_profile', {});
 };
 
+/************* messages ****************/
+exports.messages = function(req, res) {
+	res.render('messages', {});
+};
 
+/************* message profile ****************/
+exports.message_profile = function(req, res) {
+	res.render('message_profile', {});
+};
+
+/************* letterbox ****************/
+exports.letterbox = function(req, res) {
+	res.render('letterbox', {});
+};
+
+/************* more ****************/
+exports.more = function(req, res) {
+	res.render('more', {});
+};
+
+/************* notice ****************/
+exports.notice = function(req, res) {
+	res.render('notice', {});
+};
+
+/************* help ****************/
+exports.help = function(req, res) {
+	res.render('help', {});
+};
+
+/************* version ****************/
+exports.version = function(req, res) {
+	res.render('version', {});
+};
+
+/************* contact ****************/
+exports.contact = function(req, res) {
+	res.render('contact', {});
+};

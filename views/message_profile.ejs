@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Messages</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/messages" method="POST" id="back">
+					<p style="cursor:pointer" onclick="$('#back').submit()">back</p>
+				</form>				
+				<p>messages</p>
+			</div>
+			<div id="profilePictureWrapper">
+				<div id="profilePicture">
+					<img src="../images/profileThumb1.png" />
+				</div>
+				<div id="profileData">
+					<div id="name">
+						<p>Chris</p>
+					</div>
+					<div id="country">
+						<img src="../images/korea.png" />
+						<p>Korean</p>
+					</div>
+				</div>
+			</div>
+			<div id="friendProfileWrapper">
+				<div class="languageContainer">
+					<div class="profileTitle">
+						<p>LANGUAGE</p>
+					</div>
+					<div class="profileContent">
+						<p>Korean, English, French, Chinese</p>
+					</div>
+				</div>	
+				<div class="languageContainer">
+					<div class="profileTitle">
+						<p>STUDYING</p>
+					</div>
+					<div class="profileContent">
+						<p>Sanskrit, Latin</p>
+					</div>
+				</div>	
+			</div>
+			<div id="msgBtns">
+				<form action="/letterbox" method="POST" id="letterbox">
+					<div id="letterBoxBtn" onclick="$('#letterbox').submit()">
+						<p>letterbox</p>
+					</div>
+				</form>
+				<form action="profile" method="POST" id="profile">	
+					<div id="profile" onclick="$('#profile').submit()">
+						<p>profile</p>
+					</div>
+				</form>	
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/default.js"></script>
+	</body>
+</html>

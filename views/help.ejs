@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Help</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/more" method="POST" id="back">
+					<p style="cursor:pointer" onclick="$('#back').submit()">back</p>
+				</form>
+				<p>help</p>
+			</div>
+			<div id="rows">
+				<li id="title1"><span>There is a secret again!</span><div class="clearboth"></div></li>
+				<div id="content" style="display: none">
+					<ul class="content_list">
+						<li>Aurumplanet is going to rule the universe</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/default.js"></script>
+	</body>
+</html>
