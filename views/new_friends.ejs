@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Find your new friends</title>
@@ -33,10 +34,13 @@
 			</div>
 
 			<div id="recReqToggle">
-				<span id="toggleToRecommend"><button>recommend</button></span>
-				<span id="toggleToRequest"><button>request</button></span>
+				<span class="recBtns" id="toggleToRecommend" style="display: none">recommend</span>
+				<span class="recBtns">recommend clicked</span>
+
+				<span class="reqBtns" id="toggleToRequest">request</span>
+				<span class="reqBtns" style="display: none">request Clicked</span>
 			</div>
-			<div class="recommendAndRequest">
+			<div class="recommendAndRequest"> <!-- 친구 추천 -->
 				<div class="profileList">				
 					<div class="profileThumb">
 						<img src="../images/profileThumb2.png" />
@@ -61,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="recommendAndRequest">
+			<div class="recommendAndRequest" style="display: none"> <!-- 친구 요청 -->
 				<div class="profileList">				
 					<div class="profileThumb">
 						<img src="../images/profileThumb2.png" />
@@ -87,5 +91,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/default.js"></script>
 	</body>
 </html>

@@ -23,11 +23,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', admin.new_friends);
+app.get('/', admin.profile);
 app.post('/login', admin.login);
 app.post('/signup', admin.signup);
 app.post('/signupmove', admin.signupmove);
 app.post('/new_friends', admin.new_friends);
+app.post('/edit_profile', admin.edit_profile);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

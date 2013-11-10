@@ -6,6 +6,7 @@ function err(message) {
 	alert(message);
 }
 
+/*
 var doTemp = function() {
 	 $.ajax({
 	 	type: "POST",
@@ -17,3 +18,16 @@ var doTemp = function() {
 	 	dataType: "text"
 	 });	
 }
+*/
+
+$('#toggleToRecommend').click(function(e) {
+	$('.recBtns').toggle();
+	$('.reqBtns').toggle();
+	$('.recommendAndRequest').toggle();
+});
+
+$('#toggleToRequest').click(function(e) {
+	$('.recBtns').toggle();
+	$('.reqBtns').toggle();
+	$('.recommendAndRequest').toggle();
+});

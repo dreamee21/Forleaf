@@ -125,8 +125,14 @@ exports.new_friends = function(req, res) {
 	res.render('new_friends', {});
 };
 
+/************* profile ****************/
+exports.profile = function(req, res) {
+	res.render('profile', {});
+};
 
-
-
+/************* edit profile ****************/
+exports.edit_profile = function(req, res) {
+	res.render('edit_profile', {});
+};
 
 

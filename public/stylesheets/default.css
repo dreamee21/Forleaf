@@ -132,6 +132,31 @@ a:hover {
 	text-align: center;
 }
 
+.recBtns {
+	background-color: red;
+}
+
+.reqBtns {
+	background-color: blue;
+}
+
+/******** profile *******/
+#profilePictureWrapper {
+	text-align: center;
+}
+
+#profileData p {
+	display: inline-block;
+}
+
+.profileTitle {
+	color: green;
+}
+
+
+
+
+
 
 
 
