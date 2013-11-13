@@ -8,14 +8,23 @@
 	<body>
 		<div id="whole">
 			<div id="naviBar">
-				<form action="/profile" method="POST" id="back">
-					<p style="cursor:pointer" onclick="$('#back').submit()">back</p>
-				</form>
-				<p>Edit Profile</p>
-				<form action="/profile" method="POST" id="edit">
-					<p style="cursor:pointer" onclick="$('#edit').submit()">edit</p>
-				</form>
-			</div>
+				<img src="images/nav/nav_new_friends.png" width="100%" height="45" />
+			</div>	
+			<div id="blankWithoutTab"></div>
+			<div id="profilePictureWrapper">
+				<div id="profileData">
+					<div id="profilePicture">
+						<img src="/images/profile_thum/profileThumb1.png" />
+					</div>
+					<div id="name">
+						<p>CHRIS</p>
+					</div>
+					<div id="country">
+						<img src="../images/country_thum/korea.png" width="14" height="9" />
+						<p>KOREAN</p>
+					</div>
+				</div>
+			</div>			
 			<div id="profileDetailWrapper">
 				<div class="profileTitle">
 					<p>AGE</p>
@@ -75,7 +84,7 @@
 					</div>
 				</div>
 				<div class="profileTitle">
-					<p>STUDYING</p>
+					<p>WANT TO STUDY</p>
 				</div>
 				<div class="profileContent">
 					<select>
@@ -94,16 +103,23 @@
 					</select>
 					<div class="language">
 						<p class="languageName">Sanskrit</p>
-						<p class="languageLevel">Great</p>
+						<p class="languageLevel">-GREAT</p>
 					</div>
 					<div class="language">
 						<p class="languageName">Latin</p>
-						<p class="languageLevel">Good</p>
+						<p class="languageLevel">-GOOD</p>
 					</div>
 					<div class="language">
 						<p class="languageName">Korean</p>
-						<p class="languageLevel">Good</p>
+						<p class="languageLevel">-GOOD</p>
 					</div>
+				</div>
+				<div class="profileTitle">
+					<p>JOB</p>
+				</div>
+				<div class="profileContent">
+					<input type="text" placeholder="Add school / job" id="add_job" />
+					<p>University student</p>
 				</div>
 				<div class="profileTitle">
 					<p>LOCATION</p>
@@ -112,14 +128,7 @@
 					<button>change location</button>
 				</div>
 				<div class="profileTitle">
-					<p>SCHOOL / JOB</p>
-				</div>
-				<div class="profileContent">
-					<input type="text" placeholder="Add school / job" id="add_job" />
-					<p>University student</p>
-				</div>
-				<div class="profileTitle">
-					<p>HOBBY</p>
+					<p>INTERESTS</p>
 				</div>
 				<div class="profileContent">
 					<input type="text" placeholder="Add hobby" id="add_hobby" />
@@ -129,7 +138,7 @@
 					<p>INTRODUCTION</p>
 				</div>
 				<div class="profileContent">
-					<textarea rows="4" cols="50">Let's be pirates
+					<textarea rows="4" cols="38" style="color: #8b8b8d">Let's be pirates
 					</textarea>
 				</div>
 			</div>

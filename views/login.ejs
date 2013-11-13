@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
 	<head>
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<meta charset="utf-8">
 		<title>Singup for Forleaf</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+		<link rel="stylesheet" media="screen" href="/lib/bootstrap/css/bootstrap.min.css"/>
 	</head>
 	<body>
 		<div id="whole">
-			<div id="loginLogo">
-				<img src="/images/loginLogo.jpg" width="150" height="61">
-			</div>
-			<div id="loginContents">
-				<form action="/login" method="POST" id="login_form">
+			<div id="loginWrapper">
+				<div id="loginLogo">
+					<form action="/main_move" method="POST" name="main_move_form">
+						<a style = "cursor:pointer" onclick = "$('form[name=main_move_form]').submit()"><img src="/images/login-logo.png" width="150" height="61"></a>
+					</form>
+				</div>
+				<div id="loginContents">
+					<form action="/login" method="POST" name="login_form">
 						<div id="email">
-							<input type="text" placeholder="E-mail" name="email" />
+							<input type="text" placeholder="E-mail" name="email" class="clearfix alert-div"/>
+							<div class="login-email-alert alert-div"></div>
 						</div>
 						<div id="password">
-							<input type="password" placeholder="Password" name="passwd" />
+							<input type="password" placeholder="Password" name="passwd" class="clearfix alert-div"/>
+							<div class="login-passwd-alert alert-div"></div>
 						</div>
 						<div id="login">
-							<a style="cursor:pointer" onclick="$('#login_form').submit()">Login</a>
+							<a style="cursor:pointer" onclick="login()"><img src="/images/button/login-login.png" width="56" height="18" /></a>
 						</div>
-				</form>
-				<form action="/signupmove" method="POST" id="signupmove_form">
+					</form>
+				</div>
+				<div id="signupContents">
+					<form action="/signup_move" method="POST" name="signup_move_form">
 						<div id="signupBtn">
-							<a style="cursor:pointer" onclick="$('#signupmove_form').submit()">SignUp</a>
+							<a style="cursor:pointer" onclick="$('form[name=signup_move_form]').submit()"><img src="/images/button/login-signup.png" width="56" height="18" /></a>
 						</div>
-				</form>
-			</div>
+					</form>
+				</div>
+			</div>	
 		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="/javascripts/default.js"></script>
+		<script src="/javascripts/login.js"></script>
+		<script src="/lib/forleaf.js"></script>
+		<script src="/lib/jquery.form.js"></script>
+		<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>

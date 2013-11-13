@@ -8,46 +8,23 @@
 	<body>
 		<div id="whole">
 			<div id="naviBar">
-				<p>new friends</p>
+				<img src="images/nav/nav_new_friends.png" width="100%" height="45" />
 			</div>
 			<div id="tabBar">
-				<form action="/new_friends" method="POST" id="new_friends">
-					<p style="cursor:pointer" onclick="$('#new_friends').submit()">new_friends</p>
+				<form action="/new_friends_move" method="POST" id="new_friends">
+					<div id="newFriendsTabLt" style="cursor:pointer" onclick="$('#new_friends').submit()"></div>
+				</form>	
+				<form action="/profile_move" method="POST" id="profile">
+					<div id="profileTab" style="cursor:pointer" onclick="$('#profile').submit()"></div>
 				</form>
-				<form action="/profile" method="POST" id="profile">
-					<p style="cursor:pointer" onclick="$('#profile').submit()">profile</p>
-				</form>
-				<form action="/messages" method="POST" id="messages">
-					<p style="cursor:pointer" onclick="$('#messages').submit()">messages</p>
+				<form action="/messages_move" method="POST" id="messages">
+					<div id="messagesTab" style="cursor:pointer" onclick="$('#messages').submit()"></div>
 				</form>				
-				<form action="/more" method="POST" id="more">
-					<p style="cursor:pointer" onclick="$('#more').submit()">more</p>
+				<form action="/more_move" method="POST" id="more">
+					<div id="moreTab" style="cursor:pointer" onclick="$('#more').submit()"></div>
 				</form>
-			</div>				
-			<div class="profileList">
-				<div class="profileThumb">
-					<img src="../images/profileThumb1.png" />
-				</div>
-				<div class="profileInfo">
-					<div class="profileInfoRow">
-						<img src="../images/korea.png" />
-						<p>Chris Kim</p>
-					</div>
-					<div class="profileInfoRow">
-						<p>Speaks: </p>
-						<p>Korean, English, ...</p>
-					</div>
-					<div class="profileInfoRow">
-						<p>Learning: </p>
-						<p>French, Chinese</p>
-					</div>
-					<div class="profileInfoRow">
-						<p>Near at: </p>
-						<p>낙성대, 신촌, 강변</p>
-					</div>
-				</div>
 			</div>
-
+			<div id="blank"></div>				
 			<div id="recReqToggle">
 				<span class="recBtns" id="toggleToRecommend" style="display: none">recommend</span>
 				<span class="recBtns">recommend clicked</span>
@@ -55,39 +32,43 @@
 				<span class="reqBtns" id="toggleToRequest">request</span>
 				<span class="reqBtns" style="display: none">request Clicked</span>
 			</div>
-			<div class="recommendAndRequest"> <!-- 친구 추천 -->
-				<div class="profileList">				
-					<div class="profileThumb">
-						<img src="../images/profileThumb2.png" />
-					</div>
-					<div class="profileInfo">
-						<div class="profileInfoRow">
-							<img src="../images/china.png" />
-							<p>JJounggue</p>
+			<div class="recommendAndRequest" id="recommendList"> <!-- 친구 추천 -->
+				<div class="profileList">
+					<div class="profileWrapper">			
+						<div class="profileThumbWrapper">
+							<div class="profileThumb">
+								<img src="../images/profile_thum/samplethum0.png" width="50" height="50" />
+							</div>
+							<div class="profileBrief">	
+								<p class="profileName">MAX</p>
+								<img src="../images/country_thum/china.png" class="flags" width="19" height="19" />
+							</div>
 						</div>
-						<div class="profileInfoRow">
-							<p>Speaks: </p>
-							<p>Korean, English, ...</p>
+						<div class="profileInfo">
+							<div class="profileInfoRow">
+								<p class="profileInfoRowTitles">CAN</p>
+								<p class="profileInfoRowContents">KOREAN, ENGLISH</p>
+							</div>
+							<div class="profileInfoRow">
+								<p class="profileInfoRowTitles">WANT</p>
+								<p class="profileInfoRowContents">FRENCH, CHINESE</p>
+							</div>
+							<div class="profileInfoRow">
+								<p class="profileInfoRowTitles">AREA</p>
+								<p class="profileInfoRowContents">KANGBYUN</p>
+							</div>
 						</div>
-						<div class="profileInfoRow">
-							<p>Learning: </p>
-							<p>French, Chinese</p>
-						</div>
-						<div class="profileInfoRow">
-							<p>Near at: </p>
-							<p>낙성대, 신촌, 강변</p>
-						</div>
-					</div>
+					</div>	
 				</div>
 			</div>
-			<div class="recommendAndRequest" style="display: none"> <!-- 친구 요청 -->
+			<div class="recommendAndRequest" id="requestList" style="display: none"> <!-- 친구 요청 -->
 				<div class="profileList">				
 					<div class="profileThumb">
-						<img src="../images/profileThumb2.png" />
+						<img src="../images/profile_thum/profileThumb2.png" />
 					</div>
 					<div class="profileInfo">
 						<div class="profileInfoRow">
-							<img src="../images/india.png" />
+							<img src="../images/country_thum/india.png" />
 							<p>Indian</p>
 						</div>
 						<div class="profileInfoRow">
@@ -107,6 +88,6 @@
 			</div>
 		</div>
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="/javascripts/default.js"></script>
+		<script src="/javascripts/new_friends.js"></script>
 	</body>
 </html>

@@ -8,27 +8,25 @@
 	<body>
 		<div id="whole">
 			<div id="naviBar">
-				<form action="/messages" method="POST" id="back">
-					<p style="cursor:pointer" onclick="$('#back').submit()">back</p>
-				</form>				
-				<p>messages</p>
+				<img src="images/nav/nav_new_friends.png" width="100%" height="45" />
 			</div>
+			<div id="blankWithoutTab"></div>			
 			<div id="profilePictureWrapper">
-				<div id="profilePicture">
-					<img src="../images/profileThumb1.png" />
-				</div>
 				<div id="profileData">
+					<div id="profilePicture">
+						<img src="/images/profile_thum/profileThumb1.png" />
+					</div>
 					<div id="name">
-						<p>Chris</p>
+						<p>CHRIS</p>
 					</div>
 					<div id="country">
-						<img src="../images/korea.png" />
-						<p>Korean</p>
+						<img src="../images/country_thum/korea.png" width="14" height="9" />
+						<p>KOREAN</p>
 					</div>
 				</div>
 			</div>
 			<div id="friendProfileWrapper">
-				<div class="languageContainer">
+				<div class="languageContainer" id="friendLanguages">
 					<div class="profileTitle">
 						<p>LANGUAGE</p>
 					</div>
@@ -36,29 +34,25 @@
 						<p>Korean, English, French, Chinese</p>
 					</div>
 				</div>	
-				<div class="languageContainer">
+				<div class="languageContainer" id="friendStudying">
 					<div class="profileTitle">
-						<p>STUDYING</p>
+						<p>WANT TO STUDY</p>
 					</div>
 					<div class="profileContent">
 						<p>Sanskrit, Latin</p>
 					</div>
 				</div>	
 			</div>
+			<div class="clearboth"></div>
 			<div id="msgBtns">
-				<form action="/letterbox" method="POST" id="letterbox">
-					<div id="letterBoxBtn" onclick="$('#letterbox').submit()">
-						<p>letterbox</p>
-					</div>
+				<form action="/letterbox_move" method="POST" id="letterbox">
+					<div id="letterBoxBtn" onclick="$('#letterbox').submit()"></div>
 				</form>
-				<form action="profile" method="POST" id="profile">	
-					<div id="profile" onclick="$('#profile').submit()">
-						<p>profile</p>
-					</div>
+				<form action="profile_move" method="POST" id="profile">	
+					<div id="profileBtn" onclick="$('#profile').submit()"></div>
 				</form>	
 			</div>
 		</div>	
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="/javascripts/default.js"></script>
 	</body>
 </html>
