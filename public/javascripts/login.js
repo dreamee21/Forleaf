@@ -2,17 +2,17 @@ $(document).ready(function() {
 	var i=1;
 	var image = $('#loginPageWrapper');
 	setInterval(function () {
-		image.fadeOut(4000, function(){
+		image.fadeOut(1500, function(){
 			i = String(i);
 			image.css("background-image", "url('/images/signup_login/" + i + ".png')");
-			image.fadeIn(4000);
+			image.fadeIn(1500);
 			i = Number(i);
 			i++;
 			if(i===8) {
 				i=0;
 			}
 		});
-	},2000);	
+	},3000);	
 	$("input[name=email]").focus();
 	/*var status = $.getUrlVar('status');
 	if(status == "failed"){
