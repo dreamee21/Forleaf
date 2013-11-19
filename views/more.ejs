@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>More</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<div id="moreNav"></div>
+			</div>
+			<div id="tabBar">
+				<form action="/new_friends_move" method="POST" id="new_friends">
+					<div id="newFriendsTab" style="cursor:pointer" onclick="$('#new_friends').submit()"></div>
+				</form>	
+				<form action="/profile_move" method="POST" id="profile">
+					<div id="profileTab" style="cursor:pointer" onclick="$('#profile').submit()"></div>
+				</form>
+				<form action="/messages_move" method="POST" id="messages">
+					<div id="messagesTab" style="cursor:pointer" onclick="$('#messages').submit()"></div>
+				</form>				
+				<form action="/more_move" method="POST" id="more">
+					<div id="moreTabLt" style="cursor:pointer" onclick="$('#more').submit()"></div>
+				</form>
+			</div>
+			<div id="blank"></div>				
+			<div id="moreRow1">
+				<form action="/notice_move" method="POST" id="notice">
+					<div class="moreContent" id="noticeBtn" style="cursor:pointer" onclick="$('#notice').submit()">
+					</div>
+				</form>	
+				<form action="/help_move" method="POST" id="help">
+					<div class="moreContent" id="helpBtn" style="cursor:pointer" onclick="$('#help').submit()">
+					</div>
+				</form>
+				<form action="/version_move" method="POST" id="version">
+					<div class="moreContent" id="versionBtn" style="cursor:pointer" onclick="$('#version').submit()">
+					</div>
+				</form>	
+			</div>
+			<div id="moreRow2">
+				<form action="/contact_move" method="POST" id="contact">
+					<div class="moreContent" id="contactBtn" style="cursor:pointer" onclick="$('#contact').submit()">
+					</div>
+				</form>
+				<form action="/logout" method="GET" id="logout">			
+					<div class="moreContent" id="logoutBtn" style="cursor:pointer" onclick="$('#logout').submit()">
+					</div>
+				</form>
+				<div class="moreContent">
+				</div>
+			</div>
+			<div id="poweredByForleaf">
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	</body>
+</html>

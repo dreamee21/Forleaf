@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Letterbox</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/message_profile_move" method="POST" id="back">
+					<div id="backBtn" style="cursor:pointer"></div>
+				</form>				
+				<div id="letterNav"></div>
+			</div>	
+			<div id="blankWithoutTab"></div>
+			<div id="letterWrapper">
+			</div>
+			<div id="letterWrapper_append">
+			</div>
+			<div id="letterTextBarBlank"></div>
+			<div id="letterTextBar">
+				<form id="message_input">
+					<input type="text" id="letterTextBox"></input>
+				</form>
+				<form id="message_input_click">
+				<div type="submit" id="ok"></div>
+				</form>
+			</div>
+		</div>	
+		<script>var rooms = "<%=message_idx%>";</script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="/lib/socket.io.js"></script>
+		<script src="/javascripts/letter.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="/lib/jquery.form.js"></script>
+		
+	</body>
+</html>

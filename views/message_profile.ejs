@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Messages</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/messages_move" method="POST" id="back">
+					<div id="backBtn" style="cursor:pointer" onclick="$('#back').submit()"></div>
+				</form>
+				<div id="letterNav"></div>
+			</div>
+			<div id="blankWithoutTab"></div>			
+			<div id="profilePictureWrapper_append">
+			</div>
+			<div id="friendProfileWrapper">
+			</div>
+			<div class="clearboth"></div>
+			<div id="msgBtns">
+				<form action="/letterbox_move" method="POST" id="letterbox">
+					<div id="letterBoxBtn" onclick="$('#letterbox').submit()"></div>
+				</form>
+				<form action="/profile_move" method="POST" id="profile">	
+					<div id="profileBtn" onclick="$('#profile').submit()"></div>
+				</form>	
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/message_profile.js"></script>
+	</body>
+</html>

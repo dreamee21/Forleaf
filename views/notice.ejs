@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Notice</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/more_move" method="POST" id="back">
+					<div id="backBtn" style="cursor:pointer" onclick="$('#back').submit()"></div>
+				</form>				
+				<div id="noticeNav"></div>
+			</div>
+			<div id="blankWithoutTab"></div>
+			<div id="rows">
+				<li id="title1" class="rowTitle">
+					<span class="contentMargin">Welcome to Forleaf</span>
+					<div class="upDownToggle1 downButton"></div>
+					<div class="upDownToggle1 upButton" style="display: none"></div>
+					<div class="rowRegTime">
+						<span>2013/11/16</span>
+						<span style="margin-left: 5px;">5:46PM</span>
+					</div>
+					<div class="clearboth"></div></li>
+				<div id="content1" class="rowContent" style="display: none">
+					<ul class="contentList contentMargin">
+						<li>Welcome to Forleaf. Forleaf is a mobile platform for people who wants to meet other language users in order to learn and experience diverse cultures and languages. Go to the new friends tab and meet your new friends!</li>
+					</ul>
+				</div>
+			</div>
+			<li id="title2" class="rowTitle">
+					<span class="contentMargin">Welcome to Forleaf</span>
+					<div class="upDownToggle2 downButton"></div>
+					<div class="upDownToggle2 upButton" style="display: none"></div>
+					<div class="rowRegTime">
+						<span>2013/11/16</span>
+						<span style="margin-left: 5px;">5:46PM</span>
+					</div>
+					<div class="clearboth"></div></li>
+				<div id="content2" class="rowContent" style="display: none">
+					<ul class="contentList contentMargin">
+						<li>Welcome to Forleaf. Forleaf is a mobile platform for people who wants to meet other language users in order to learn and experience diverse cultures and languages. Go to the new friends tab and meet your new friends!</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/notice_and_help.js"></script>
+	</body>
+</html>
