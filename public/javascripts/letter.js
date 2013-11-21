@@ -69,6 +69,14 @@ $(document).ready(function(){
 			messageBox.val('');
 		}
 	});
+	$('#message_input_click').click(function(e){
+		var msg = messageBox.val();
+		if($.trim(msg) !== ''){
+			showMessage(msg, my_idx);
+			room.json.send({msg:msg, idx: my_idx});
+			messageBox.val('');
+		}
+	});
 	$('#back').click(function(e){
 		room.emit('leave', {idx: my_idx});
 		$('#back').submit();

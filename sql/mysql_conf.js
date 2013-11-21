@@ -1,9 +1,9 @@
 var mysql = require('mysql');
 var mysql_config = mysql.createConnection({
-	host				: '61.43.139.64',
+	host				: 'localhost',
 	user				: 'root',
-	password			: 'software',
-	database			: 'Forleaf',
+	password			: 'anm30925',
+	database			: 'forleaf',
 	multipleStatements	: true
 });
 

@@ -23,6 +23,8 @@ exports.new_friends_move = function(req, res) {
 exports.profile_move = function(req, res) {
 	delete req.session.location;
 	delete req.session.locations;
+	delete req.session.num;
+	delete req.session.render;
 	res.render('profile', {});
 };
 
@@ -32,8 +34,14 @@ exports.edit_profile_move = function(req, res) {
 	res.render('edit_profile', {});
 };
 
+/*exports.edit_profile_move2 = function(req, res) {
+	console.log(req.session);
+	if(req.session.render>3)	res.render('edit_profile', {});
+};*/
+
 exports.profile_location_move = function(req, res) {
 	req.session.num = 0;
+	req.session.render = 0;
 	res.render('pick_location', {location: req.session.location});
 };
 
@@ -41,6 +49,7 @@ exports.profile_location_session = function(req, res){
 	if(req.session.num == 0)	req.session.locations = req.body.location;
 	else						req.session.locations += "," + req.body.location;
 	req.session.num++;
+	req.session.render++;
 	console.log(req.session.num +" "+req.session.locations);
 	if(req.session.num > 2){
 		req.session.num = 0;

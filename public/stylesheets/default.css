@@ -443,15 +443,12 @@ form {
 
 .profileThumbWrapper {
 	float: left;
+	width: 100px;
 	margin-left: 15px;
 }
 
 .profileThumbWrapper div {
 	display: inline-block;
-}
-
-.profileBrief {
-	text-align: left;
 }
 
 .profileInfo {
@@ -485,6 +482,7 @@ form {
 
 .profileName {
 	margin: 0;
+	margin-bottom: 6px;
 	font-size: 7.5pt;
 	color: #9350d8;
 }
@@ -575,8 +573,15 @@ form {
 
 .profileContent p {
 	margin-left: 6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
+.profileContent span {
+	margin-left: 6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
 /******** edit profile *******/
 .language p {
 	display: inline-block;
@@ -791,14 +796,7 @@ form {
 	left: -41px;
 }
 
-#letterTextBarBlank {
-	bottom: 0px;
-	width: 320px;
-	height: 44px;	
-}
-
 #letterTextBar {
-	position: fixed;
 	text-align: left;
 	bottom: 0px;
 	width: 320px;
@@ -1048,14 +1046,3 @@ form {
 	margin-top: 22px;
 	margin-bottom: 90px;
 }
-
-
-
-
-
-
-
-
-
-
-

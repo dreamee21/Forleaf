@@ -33,7 +33,7 @@ var validator_option = {
 }
 
 // all environments
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
@@ -91,6 +91,7 @@ app.post('/friend_session', move.friend_session);
 app.post('/request_profile_move', move.request_profile_move);
 app.post('/profile_location_move', move.profile_location_move);
 app.post('/profile_location_session', move.profile_location_session);
+//app.post('/edit_profile_move2', move.edit_profile_move2);
 //app.post('/send_mail', contact.send_mail);
 
 app.post('/send_mail', contact.send_mail);

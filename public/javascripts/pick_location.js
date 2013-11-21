@@ -42,10 +42,12 @@ function placeMarker(location, n)
 
 function insertLocation(){
 	if(n>=3){
+		var flag = 0;
 		var geocoder = new google.maps.Geocoder();
 		var latlng = new google.maps.LatLng(marker[0].position.ob, marker[0].position.pb);
 		geocoder.geocode({'latLng': latlng}, function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
+				flag ++;
 				var a = results[0].formatted_address.split(' ');
 				$.ajax({
 					type: "POST",
@@ -55,16 +57,16 @@ function insertLocation(){
 					resetForm: false,
 					beforeSubmit: function(){},
 					success: function(result){
-						$('form[name=done]').submit();
 					}
 				});
+				console.log(flag);
 			}
 		});
-
+		console.log(flag);
 		latlng = new google.maps.LatLng(marker[1].position.ob, marker[1].position.pb);
 		geocoder.geocode({'latLng': latlng}, function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
-				var a = results[0].formatted_address.split(' ');
+				a = results[0].formatted_address.split(' ');
 				$.ajax({
 					type: "POST",
 					url: "/profile_location_session",
@@ -73,12 +75,10 @@ function insertLocation(){
 					resetForm: false,
 					beforeSubmit: function(){},
 					success: function(result){
-						$('form[name=done]').submit();
 					}
 				});
 			}
 		});
-
 		latlng = new google.maps.LatLng(marker[2].position.ob, marker[2].position.pb);
 		geocoder.geocode({'latLng': latlng}, function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
@@ -91,11 +91,11 @@ function insertLocation(){
 					resetForm: false,
 					beforeSubmit: function(){},
 					success: function(result){
-						$('form[name=done]').submit();
 					}
 				});
 			}
 		});
 	}
+
 	else	alert("위치를 3곳 선택해 주세요.");
 }
