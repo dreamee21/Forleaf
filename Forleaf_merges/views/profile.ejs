@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Find your new friends</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/edit_profile_move" method="POST" id="edit">
+					<div id="editBtn" style="cursor:pointer" onclick="$('#edit').submit()"></div>
+				</form>				
+				<div id="profileNav"></div>
+			</div>
+			<div id="tabBar">
+				<form action="/new_friends_move" method="POST" id="new_friends">
+					<div id="newFriendsTab" style="cursor:pointer" onclick="$('#new_friends').submit()"></div>
+				</form>	
+				<form action="/profile_move" method="POST" id="profile">
+					<div id="profileTabLt" style="cursor:pointer" onclick="$('#profile').submit()"></div>
+				</form>
+				<form action="/messages_move" method="POST" id="messages">
+					<div id="messagesTab" style="cursor:pointer" onclick="$('#messages').submit()"></div>
+				</form>				
+				<form action="/more_move" method="POST" id="more">
+					<div id="moreTab" style="cursor:pointer" onclick="$('#more').submit()"></div>
+				</form>
+			</div>
+			<div id="blank"></div>
+			<div id="profilePictureWrapper_append">
+			</div>
+			<div id="profileDetailWrapper">
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/javascripts/profile.js"></script>
+	</body>
+</html>

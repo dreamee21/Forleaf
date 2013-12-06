@@ -1,0 +1,992 @@
+@charset "utf-8";
+@import url(http://fontface.kr/NanumGothicBold/css);
+
+* {
+	font-family: "NanumGothicBold" "Malgun Gothic", "맑은 고딕";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+ul {
+	display: table;
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.button {
+	cursor: pointer;
+}
+
+a:link {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #666666;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #666666;
+}
+
+p {
+	margin: 0;
+}
+
+form {
+	display: inline-block;
+}
+
+
+/* common */
+#whole {
+	text-align: center;
+	width: 320px;
+	height: 548px;
+	margin: 0 auto;
+}
+
+#blank {
+	margin-top: 100px;
+}
+
+#blankWithoutTab {
+	margin-top: 45px;
+}
+
+/* Login */
+#loginWrapper {
+	width: 320px;
+	height: 548px;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+#loginPageWrapper {
+	width: 320px;
+	height: 548px;
+	background-image: url("/images/signup_login/0.png");
+	background-size: 320px 548px;
+	background-color: black;		
+}
+
+#signupLoginBlank {
+	height: 120px;
+}
+
+#loginContents {
+	margin: 0 auto;
+	width: 248px;
+	height: 220px;
+	background-image: url("/images/signup_login/white-box.png");
+	background-size: 248px 220px;
+}
+
+#loginBlank {
+	height: 10px;
+}
+
+#loginContents form {
+	margin: 0;
+}
+
+#loginContents .alert-div{
+	color:rgba(255, 0, 0, .4);
+}
+
+#loginContents input {
+	width: 212px;
+	height: 17px;
+	border: 1px solid #1cd389;}
+
+#login {
+	margin: 0 auto;
+	width: 56px;
+	height: 19px;
+	background-image: url("/images/button/login.png");
+	background-size: 56px 19px;	
+	margin-bottom: 6px;
+}
+
+/* Signup */
+#signupWrapper {	
+	width: 320px;
+	height: 548px;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+#signupContents {
+	margin: 0 auto;
+	width: 248px;
+	height: 220px;
+	background-image: url("/images/signup_login/white-box.png");
+	background-size: 248px 220px;
+}
+
+#signupContents form {
+	margin: 0;
+}
+
+#signupContents input {
+	width: 212px;
+	height: 17px;
+	border: 1px solid #1cd389;
+}
+
+#userEmail {
+	margin-top: 60px;
+}
+
+#signUp {
+	margin: 0 auto;
+	width: 56px;
+	height: 19px;
+	background-image: url("/images/button/signup.png");
+	background-size: 56px 19px;
+	margin-bottom: 6px;
+}
+
+/* navigator Bar */
+#naviBar {
+	width: 320px;
+	height: 45px;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+#naviBar div {
+	display: inline-block;
+}
+
+#newFriendsNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_new_friends.png");
+	background-size: 320px 45px;
+}
+
+#profileNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_my_profile.png");
+	background-size: 320px 45px;
+}
+
+#letterNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_letter.png");
+	background-size: 320px 45px;
+}
+
+#moreNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_more.png");
+	background-size: 320px 45px;	
+}
+
+#noticeNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_notice.png");
+	background-size: 320px 45px;
+}
+
+#helpNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_help.png");
+	background-size: 320px 45px;
+}
+
+#versionNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_version.png");
+	background-size: 320px 45px;
+}
+
+#contactNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_contact.png");
+	background-size: 320px 45px;
+}
+
+#versionNav {
+	width: 320px;
+	height: 45px;
+	background-image: url("/images/nav/nav_version.png");
+	background-size: 320px 45px;
+}
+
+#back {
+	width: 11px;
+	height: 22px;
+	position: fixed;
+	margin-left: 18px;
+	top: 11px;
+	background-image: url("/images/button/back-button.png");
+	background-size: 11px 22px;
+}
+
+#edit {
+	width: 56px;
+	height: 19px;
+	position: fixed;
+	margin-left: 252px;
+	top: 12px;
+	background-image: url("/images/button/edit.png");
+	background-size: 56px 19px;
+}
+
+#backBtn {
+	width: 11px;
+	height: 22px;
+}
+
+#naviBar p {
+	display: inline-block;
+	color: white;
+	margin: 0;
+}
+
+/* tab Bar */
+#tabBar {
+	width: 320px;
+	height: 55px;
+	position: fixed;
+	top: 45px;
+	background-image: url("/images/opacity/opacity90.png");
+	background-size: 320px;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	z-index: 3;
+}
+
+#tabBar div {
+	display: inline-block;
+}
+
+#newFriendsTab {
+	width: 77px;
+	height: 55px;
+	background-image: url("/images/icon/icon-friends.png");
+	background-size: 80px 55px;
+}
+
+#newFriendsTabLt {
+	width: 77px;
+	height: 55px;
+	background-image: url("/images/icon/icon-friends-lt.png");
+	background-size: 80px 55px;
+}
+
+#profileTab {
+	width: 76px;
+	height: 55px;
+	background-image: url("/images/icon/icon-profile.png");
+	background-size: 80px 55px;
+}
+
+#profileTabLt {
+	width: 76px;
+	height: 55px;
+	background-image: url("/images/icon/icon-profile-lt.png");
+	background-size: 80px 55px;
+}
+
+#messagesTab {
+	width: 76px;
+	height: 55px;
+	background-image: url("/images/icon/icon-letter.png");
+	background-size: 80px 55px;
+}
+
+#messagesTabLt {
+	width: 76px;
+	height: 55px;
+	background-image: url("/images/icon/icon-letter-lt.png");
+	background-size: 80px 55px;
+}
+
+#moreTab {
+	width: 76px;
+	height: 55px;
+	background-image: url("/images/icon/icon-more.png");
+	background-size: 80px 55px;
+}
+
+#moreTabLt {
+	width: 76px;
+	height: 55px;
+	background-image: url("/images/icon/icon-more-lt.png");
+	background-size: 80px 55px;
+}
+
+/******** new friends *******/
+#recReqToggle {
+	width: 200px;
+	height: 19px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+#recReqToggle div {
+	display: inline-block;
+}
+
+#toggleToRecommend {
+	background-image: url("/images/button/recommend-reverse.png");
+	background-size: 90px 19px;
+	width: 90px;
+	height: 19px;
+	margin-right: 10px;
+}
+
+#recommendClicked {
+	background-image: url("/images/button/recommend.png");
+	background-size: 90px 19px;
+	width: 90px;
+	height: 19px;
+	margin-right: 10px;
+}
+
+#toggleToRequest {
+	background-image: url("/images/button/request.png");
+	background-size: 90px 19px;
+	width: 90px;
+	height: 19px;
+}
+
+#requestClicked {
+	background-image: url("/images/button/request-reverse.png");
+	background-size: 90px 19px;
+	width: 90px;
+	height: 19px;
+}
+
+.profileList .profileThumb {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 14px;
+	margin-top: 9px;
+}
+
+.profileList .profileInfo {
+	display: inline-block;
+}
+
+.profileList {
+	text-align: center;
+}
+
+.profileWrapper {
+	width: 320px;	
+	height: 70px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b7b7b7;
+}
+
+.profileWrapper>div {
+	display: inline-block;
+}
+
+.profileThumbWrapper {
+	float: left;
+	width: 100px;
+	margin-left: 15px;
+}
+
+.profileThumbWrapper div {
+	display: inline-block;
+}
+
+.profileInfo {
+	margin-top: 10px;
+	width: 155px;
+	float: right;
+	text-align: left;
+}
+
+.profileInfo p {
+	margin-top: 0px;
+	margin-bottom: 6px;
+	display: inline-block;
+	font-size: 6pt;
+}
+
+.profileInfoRowTitles {
+	color: #1cd389;
+	width: 34px;
+	float: left;
+	text-align: left;
+}
+
+.profileInfoRowContents {
+	color: #8b8b8d;
+	float: left;
+	width: 110px;
+	text-align: left;
+	margin-left: 9px;
+}
+
+.profileName {
+	margin: 0;
+	font-size: 7.5pt;
+	color: #9350d8;
+}
+
+.flags {
+	width: 19px;
+	height: 19px;
+	margin-bottom: 8px;
+}
+
+/******** profile *******/
+#profilePictureWrapper {
+	text-align: center;
+	margin-bottom: 7px;
+	width: 320px; 
+	height: 200px;  
+	background-size: 320px; 
+}
+
+#profileData {
+	width: 320px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 14px;
+	background-image: url("/images/etc/pic-back.png");
+	background-size: 320px 200px;
+}
+
+#profileCircle {
+	margin: 0 auto;
+	width: 134px;
+	height: 134px;
+	background-image: url("/images/etc/white_circle.png");
+	background-size: 134px 134px;
+}
+
+#profilePicture {
+	margin-left: 3px;
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    background-size: 128px 128px;
+    -webkit-mask-image: url('/images/etc/circle.png');	
+}
+
+#profileBlank {
+	height: 12px;
+}
+
+#profilePictureBlank {
+	height: 3px;
+}
+
+#profileData p {
+	display: inline-block;
+}
+
+#name {
+	margin-top: 10px;
+	font-size: 10pt;
+	color: #9350d8;
+}
+
+#country {
+	font-size: 8pt;
+	color: #8b8b8d;
+}
+
+#profileDetailWrapper {
+	width: 295px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 8pt;
+	margin-bottom: 30px;
+}
+
+.profileTitle {
+	color: #1cd389;
+	border-bottom-color: #1cd389;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	margin-top: 23px;
+}
+
+.profileTitle p {
+	margin-left: 6px;
+}
+
+.profileContent p {
+	margin-left: 6px;
+}
+
+/******** edit profile *******/
+.language p {
+	display: inline-block;
+}
+
+.languageLevel {
+	float: right;
+}
+
+
+.profileContent {
+	color: #8b8b8d;
+	margin-top: 5px;
+}
+
+.editProfileTitle {
+	color: #1cd389;
+	margin-top: 23px;
+}
+
+.profileContent select {
+   color: #8b8b8d;
+   border: 1px solid #1cd389;
+   height: 24px;
+   width: 73px;
+   -webkit-appearance: none;	
+   background: url('/images/button/select-arrow.png') no-repeat right;
+}
+
+.profileContent option {
+	margin-left: 5px;
+}
+
+.profileContent input {
+   color: #8b8b8d;
+   border: 1px solid #1cd389;
+   width: 290px;
+   height: 24px;
+   -webkit-appearance: none;	
+	border-radius: 8px;
+	-moz-border-radius: 8px;			   
+}
+
+.profileContent textarea {
+   color: #8b8b8d;
+   border: 1px solid #1cd389;
+   width: 290px;
+   height: 130px;
+   -webkit-appearance: none;	
+	border-radius: 8px;
+	-moz-border-radius: 8px;			   
+}
+
+/******** becomeFriends *******/
+#becomeFriends {
+	width: 90px;
+	height: 19px;
+	background-image: url("/images/button/be-friends.png");
+	background-size: 90px 19px;
+	margin: 0 auto;	
+	margin-bottom: 53px;
+}
+
+/******** messages *******/
+.friendProfile div {
+	display: inline-block;
+}
+
+#friendProfileWrapper {
+	text-align: left;
+	margin: 0 auto;
+}
+
+.friendProfileWrapper div {
+	display: inline-block;
+}
+
+.languageContainer {
+	width: 139px;
+	display: inline-block;
+	font-size: 8pt;
+}
+
+#friendLanguages {
+	float: left;
+	margin-left: 14px;
+}
+
+#friendStudying {
+	float: right;
+	margin-right: 14px;
+}
+
+#msgBtns {
+	margin-top: 120px;
+	text-align: center;
+}
+
+#letterBoxBtn {
+	width: 90px;
+	height: 19px;
+	background-image: url("/images/button/letter-box.png");
+	background-size: 90px 19px;
+}
+
+#profileBtn {
+	width: 90px;
+	height: 19px;
+	background-image: url("/images/button/my-profile.png");
+	background-size: 90px 19px;
+	margin-left: 55px;
+}
+
+/******** letterbox *******/
+#letterWrapper {
+	text-align: left;
+}
+
+.friendsLetter {
+	float: left;
+	max-width: 230px;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.friendLetterProfilePhoto {
+	width: 40px;
+	float: left;
+}
+
+.friendsProfile p {
+	margin-left: 4px;
+	display: inline-block;
+}
+
+.letterBlank {
+	width: 20px;
+	height: 10px;
+}
+
+.friendsLetterContents {
+	background-color: #f2f2f2;
+	margin-left: 61px;
+	font-size: 6pt;
+	color: #6a6767;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.friendsLetterContents p {
+	padding: 8px 10px 10px 8px;
+}
+
+.myLetter {
+	margin-top: 20px;
+	float: right;
+	max-width: 300px;
+}
+
+.myLetterContents {
+	background-color: #bbf2db;
+	margin-right: 20px;
+	font-size: 6pt;
+	color: #6a6767;	
+	border-radius: 8px;
+	-moz-border-radius: 8px;	
+}
+
+.myLetterContents p {
+	padding: 8px 10px 10px 8px;
+}
+
+.letterTime {
+	font-size: 3pt;
+	color: #8b8b8d;
+}
+
+#letterTextBar {
+	text-align: left;
+	position: fixed;
+	bottom: 0px;
+	width: 320px;
+	height: 44px;
+	background-image: url("/images/letter/messages-downside.png");
+	background-size: 320px 44px;
+}
+
+#letterTextBar div {
+	display: inline-block;
+}
+
+#letterTextBox {
+	margin-top: 8px;
+	margin-left: 13px;
+	width: 256px;
+	height: 29px;
+	border-color: #9350d8;
+	border-width: 1px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;	
+}
+
+#ok {
+	position: fixed;
+	bottom: 6px;
+	margin-left: 8px; 
+	margin-top: 8px;
+	width: 30px;
+	height: 30px;
+	background-image: url("/images/letter/ok.png");
+	background-size: 30px 30px;
+}
+
+/******** more *******/
+.moreContent {
+	width: 102px;
+	height: 87px;
+}
+
+#moreRow1 div {
+	display: inline-block;
+}
+
+#noticeBtn {
+	background-image: url("/images/icon/icon-notice.png");
+	background-size: 106px 87px;
+}
+
+#helpBtn {
+	background-image: url("/images/icon/icon-help.png");
+	background-size: 106px 87px;
+}
+
+#versionBtn {
+	background-image: url("/images/icon/icon-version.png");
+	background-size: 106px 87px;
+}
+
+
+#moreRow2 div {
+	display: inline-block;
+}
+
+#contactBtn {
+	background-image: url("/images/icon/icon-contact.png");
+	background-size: 106px 87px;
+}
+
+#logoutBtn {
+	background-image: url("/images/icon/icon-logout.png");
+	background-size: 106px 87px;
+}
+
+#poweredByForleaf {
+	width: 127px;
+	height: 63px;
+	background-size: 127px 63px;
+	background-image: url("/images/more-logo.png");
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+/******** notice & help *******/
+#rows {
+	margin-top: 60px;
+}
+
+.contentMargin {
+	margin-left: 19px;
+	max-width: 300px;
+}
+
+.rowTitle {
+	text-align: left;
+	cursor: pointer;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	margin-top: 15px;
+	font-size: 12pt;
+	color: #6a6767;
+}
+
+.rowRegTime {
+	text-align: left;
+	color: #8b8b8d;
+	font-size: 6pt;
+	margin-left: 19px;
+	margin-bottom: 9px;
+}
+
+.rowContent {
+	text-align: left;	
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	font-size: 12pt;
+	color: #8b8b8d;	
+}
+
+.contentList {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.downButton {
+	width: 21px;
+	height: 12px;
+	background-image: url("/images/button/down-button.png");
+	background-size: 21px 12px;
+}
+
+.upButton {
+	width: 21px;
+	height: 12px;
+	background-image: url("/images/button/up-button.png");
+	background-size: 21px 12px;
+}
+
+.upDownToggle1 {
+	float: right;
+	margin-top: 7px;
+	margin-right: 17px;
+}
+
+.upDownToggle2 {
+	float: right;
+	margin-top: 7px;
+	margin-right: 17px;
+}
+
+/******** version *******/
+#versionData {
+	margin: 0 auto;
+	margin-top: 95px;
+	width: 275px;
+	height: 62px;
+	border: 1px solid #1cd389;
+	border-radius: 4px;
+	-moz-border-radius: 4px;		
+}
+
+#currentVersion {
+	width: 275px;
+	height: 31px;
+	border-bottom: 1px solid #1cd389;
+}
+
+#latestVersion {
+	width: 275px;
+	height: 31px;
+}
+
+#versionData p {
+	margin-top: 10px;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.versionTitle {
+	float: left;
+	margin-left: 36px;
+	color: #8b8b8d;	
+}
+
+.versionInfo {
+	float: right;
+	margin-right: 45px;
+	color: #8b8b8d;	
+}
+
+#downloadNew {
+	margin-right: 8px;
+	margin-top: 13px;
+	width: 13px;
+	height: 7px;
+	background-image: url("/images/button/down-button.png");
+	background-size: 13px 7px;
+	float: right;
+	display: inline-block;
+}
+
+#newVersionInfo {
+	margin-right: 24px;
+	float: right;
+	color: #1cd389;
+}
+
+/******** contact *******/
+#email {
+	margin-top: 81px;
+	margin-left: 20px;
+	text-align: left;
+	color: #1cd389;
+	font-size: 10pt;
+}
+
+#emailAddress {
+	width: 280px;
+	height: 25px;
+	margin-top: 5px;
+	border: 1px solid #1cd389;
+	border-radius: 8px;
+	-moz-border-radius: 8px;			
+}
+
+#contactContent {
+	margin-top: 9px;
+	width: 280px;
+	height: 280px;
+	border: 1px solid #1cd389;
+	border-radius: 8px;
+	-moz-border-radius: 8px;			
+}
+
+#send {
+	width: 56px;
+	height: 19px;
+	background-image: url("/images/button/send.png");
+	background-size: 56px 19px;
+	margin: 0 auto;
+	margin-top: 22px;
+	margin-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+

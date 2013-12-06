@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	</head>
+	<body>
+		<div id="whole">
+			<div id="naviBar">
+				<form action="/more_move" method="POST" id="back">
+					<div id="backBtn" style="cursor:pointer" onclick="$('#back').submit()"></div>
+				</form>				
+				<div id="contactNav"></div>
+			</div>
+			<div id="blankWithoutTab"></div>
+			<form action="/send_mail" name="send_mail">
+				<div id="email">
+					<p>EMAIL</p>
+					<input type="email" id="emailAddress" name="contact_email"></input>
+				</div>
+				<div id="contactContentWrapper">
+					<TEXTAREA id="contactContent" name="contact_content"></TEXTAREA>
+				</div>
+				<div id="send" onclick="sendEmail()"></div>
+			</form>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="/lib/jquery.form.js"></script>
+		<script src="/javascripts/contact.js"></script>
+	</body>
+</html>
